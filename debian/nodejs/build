@@ -1,0 +1,6 @@
+bundt
+mjs2cjs -o dist/index.js dist/index.mjs
+help2man --version-string `node bin.js -v|sed -s 's/uvu, //'` \
+	-n 'Extremely fast and lightweight test runner for Node.js and the browser' \
+	-N ./bin.js >uvu.1
+perl -i -pe 's/bin\.js/uvu/g;s/BIN\.JS/UVU/g' uvu.1

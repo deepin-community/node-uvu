@@ -1,0 +1,5 @@
+if test "$AUTOPKGTEST" != ""; then
+	uvu test index.js
+else
+	./bin.js test index.js
+fi

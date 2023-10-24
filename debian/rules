@@ -1,4 +1,21 @@
 #!/usr/bin/make -f
+# -*- makefile -*-
+
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
+
+include /usr/share/dpkg/pkg-info.mk
 
 %:
 	dh $@
+
+ifeq (,$(filter nodoc,$(DEB_BUILD_OPTIONS) $(DEB_BUILD_PROFILES)))
+override_dh_link:
+	dh_link
+	find debian/uvu/ -name .gitignore -delete
+	jdupes -rl debian/uvu/usr/share/doc/uvu/examples
+endif
+
+override_dh_fixperms:
+	dh_fixperms
+	chmod +x debian/uvu/usr/share/nodejs/uvu/bin.js

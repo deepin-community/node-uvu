@@ -1,5 +1,81 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-uvu (0.5.6+~cs4.10.4-3) unstable; urgency=medium
 
-  * Initial release
+  * Replace /releases by /tags in GitHub urls
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Yadd <yadd@debian.org>  Wed, 02 Nov 2022 09:17:04 +0100
+
+node-uvu (0.5.6+~cs4.10.4-2) unstable; urgency=medium
+
+  * Add fix for rollup 3 (Closes: #1022678)
+
+ -- Yadd <yadd@debian.org>  Fri, 28 Oct 2022 11:57:22 +0200
+
+node-uvu (0.5.6+~cs4.10.4-1) unstable; urgency=medium
+
+  * New upstream version 0.5.6+~cs4.10.4
+    (updates dequal typescript declarations)
+
+ -- Yadd <yadd@debian.org>  Wed, 27 Jul 2022 21:46:59 +0200
+
+node-uvu (0.5.6+~cs4.10.3-1) unstable; urgency=medium
+
+  * New upstream version 0.5.6+~cs4.10.3
+
+ -- Yadd <yadd@debian.org>  Mon, 04 Jul 2022 08:37:21 +0200
+
+node-uvu (0.5.5+~cs4.10.3-2) unstable; urgency=medium
+
+  * Fix autopkgtest
+
+ -- Yadd <yadd@debian.org>  Sun, 03 Jul 2022 21:21:35 +0200
+
+node-uvu (0.5.5+~cs4.10.3-1) unstable; urgency=medium
+
+  * New upstream version 0.5.5+~cs4.10.3
+
+ -- Yadd <yadd@debian.org>  Sun, 03 Jul 2022 13:51:29 +0200
+
+node-uvu (0.5.4+~cs4.10.3-1) unstable; urgency=medium
+
+  * Declare compliance with policy 4.6.1
+  * New upstream version 0.5.4+~cs4.10.3
+  * Update lintian overrides
+
+ -- Yadd <yadd@debian.org>  Sat, 25 Jun 2022 12:26:03 +0200
+
+node-uvu (0.5.3+~cs4.10.3-5) unstable; urgency=medium
+
+  * Fix build with recent mjs2cjs (Closes: #1009578)
+
+ -- Yadd <yadd@debian.org>  Wed, 13 Apr 2022 11:43:24 +0200
+
+node-uvu (0.5.3+~cs4.10.3-4) unstable; urgency=medium
+
+  * Build commonjs file using mjs2cjs
+  * Update lintian overrides
+  * Install examples
+  * Enable "require" test (pkg-js-autopkgtest is able to test this now)
+  * Enable upstream test
+  * Add uvu-help test
+  * Install examples
+
+ -- Yadd <yadd@debian.org>  Tue, 15 Feb 2022 12:14:30 +0100
+
+node-uvu (0.5.3+~cs4.10.3-3) unstable; urgency=medium
+
+  * Build commonjs files (module isn't really usable with nodejs 12)
+
+ -- Yadd <yadd@debian.org>  Mon, 14 Feb 2022 08:41:57 +0100
+
+node-uvu (0.5.3+~cs4.10.3-2) unstable; urgency=medium
+
+  * Fix permissions
+  * Build manpage using help2man
+
+ -- Yadd <yadd@debian.org>  Mon, 14 Feb 2022 06:53:35 +0100
+
+node-uvu (0.5.3+~cs4.10.3-1) unstable; urgency=medium
+
+  * Initial release (Closes: #1003726)
+
+ -- Yadd <yadd@debian.org>  Fri, 14 Jan 2022 12:41:15 +0100
