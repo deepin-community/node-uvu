@@ -1,0 +1,40 @@
+Description: fix for rollup 3
+Author: Yadd <yadd@debian.org>
+Bug-Debian: https://bugs.debian.org/1022678
+Forwarded: not-needed
+Last-Update: 2022-10-28
+
+--- a/sade/rollup.config.js
++++ b/sade/rollup.config.js
+@@ -1,5 +1,5 @@
+-import { minify } from 'terser';
+-import * as pkg from './package.json';
++const { minify } = require('terser');
++const pkg = require('./package.json');
+ 
+ /**
+  * @type {import('rollup').RollupOptions}
+@@ -9,7 +9,7 @@
+ 	output: [{
+ 		format: 'esm',
+ 		file: pkg.module,
+-		interop: false,
++		interop: 'auto',
+ 		freeze: false,
+ 		strict: false
+ 	}, {
+@@ -17,7 +17,7 @@
+ 		file: pkg.main,
+ 		exports: 'default',
+ 		preferConst: true,
+-		interop: false,
++		interop: 'auto',
+ 		freeze: false,
+ 		strict: false
+ 	}],
+@@ -38,4 +38,4 @@
+ 	]
+ }
+ 
+-export default config;
++module.exports = config;

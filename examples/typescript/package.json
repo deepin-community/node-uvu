@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "scripts": {
+    "test": "uvu -r tsm tests"
+  },
+  "devDependencies": {
+    "tsm": "^2.0.0",
+    "uvu": "^0.5.1"
+  }
+}

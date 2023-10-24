@@ -1,0 +1,13 @@
+# False positive: test launched by pkg-js-autopkgtest
+superficial-tests
+# Same author
+add-component-copyright dequal *
+add-component-copyright mri *
+add-component-copyright sade *
+# Test material
+source-is-missing *debian/tests/test_modules/esm/esm.js*
+source-is-missing *debian/tests/test_modules/esm/esm/loader.js*
+source-contains-prebuilt-javascript-object *debian/tests/test_modules/esm/esm.js*
+source-contains-prebuilt-javascript-object *debian/tests/test_modules/esm/esm/loader.js*
+very-long-line-length-in-source-file *debian/tests/test_modules/esm/esm.js*
+very-long-line-length-in-source-file *debian/tests/test_modules/esm/esm/loader.js*

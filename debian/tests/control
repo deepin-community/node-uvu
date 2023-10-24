@@ -1,0 +1,4 @@
+Test-Command: uvu -h
+Depends: @
+Restrictions: superficial
+Features: test-name=uvu-help

@@ -1,0 +1,11 @@
+assert/
+dequal/dist/
+dequal/lite/
+diff/
+dist/
+debian/tests/test_modules/esm/node_modules/
+index.cjs
+index.d.ts
+mri/lib/
+sade/lib/
+uvu.1

@@ -1,0 +1,26 @@
+version=4
+opts=\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-uvu-$1/ \
+ https://github.com/lukeed/uvu/tags .*/archive.*/v?([\d\.]+).tar.gz group
+
+opts=\
+component=dequal,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-dequal-$1/ \
+ https://github.com/lukeed/dequal/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=sade,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-sade-$1/ \
+ https://github.com/lukeed/sade/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
+
+opts=\
+component=mri,\
+ctype=nodejs,\
+dversionmangle=auto,\
+filenamemangle=s/.*?(\d[\d\.-]*@ARCHIVE_EXT@)/node-mri-$1/ \
+ https://github.com/lukeed/mri/tags .*/archive.*/v?([\d\.]+).tar.gz checksum
